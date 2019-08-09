@@ -37,9 +37,6 @@ params = {
 'price': 123.4,
 'amount': 23
 }
-params_str = json.dumps(params)
+params_str = json.dumps(params)    #将其他数据类型转换为json字符串
 
-print(type(params_str))
-
-original_params = json.loads(params_str)
-print(type(original_params))
+original_params = json.loads(params_str)  #将string类型转换为其他类型
